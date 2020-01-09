@@ -1,6 +1,6 @@
 const { events, Job } = require('@brigadecore/brigadier');
 
-events.on('exec', () => {
+events.on('push', () => {
   var job = new Job('do-nothing', 'alpine');
   job.tasks = ['echo Hello', 'echo World'];
 
